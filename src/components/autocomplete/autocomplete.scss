@@ -1,0 +1,20 @@
+.pem.forAutoComplete {
+    .customAutoComplete {
+        .MuiFormLabel-root {
+            line-height: 1.4375em !important;
+        }
+    }
+   
+}
+.MuiAutocomplete-root.customAutoComplete{
+    width: 100%;
+    .MuiInputBase-root{
+        padding: 0px;
+        .MuiInputBase-input {
+            padding: 5px 4px 5px 6px;
+        }
+    }
+    .MuiFormLabel-root {
+        top:-8px
+    }
+}

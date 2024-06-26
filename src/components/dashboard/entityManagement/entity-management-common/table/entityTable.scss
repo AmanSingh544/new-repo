@@ -1,0 +1,95 @@
+// .activerow {
+//   // background: #f2f9ff;
+//   // border: 0.25px solid #aad9fc;
+// }
+
+thead {
+  .MuiTableCell-root {
+    span {
+      color: #003c6c;
+    }
+  }
+
+  .activeheader.MuiTableCell-root {
+    span {
+    //  color: #ffff !important;
+    }
+  }
+}
+
+// .activeheader {
+//   // background: #b1000e !important;
+//   // color: white !important;
+// }
+
+.css-y8ay40-MuiTableCell-root {
+  padding: 10px !important;
+  padding-left: 20px !important;
+}
+
+.table-pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageNavi {
+  display: flex;
+
+  align-items: center;
+}
+
+.entityTableMain {
+  width: 100%;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+}
+
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar {
+  padding-left: 0px !important;
+}
+
+.MuiTablePagination-root {
+  width: 100%;
+
+  .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+  }
+
+  .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar
+    > div {
+    margin: 5px !important;
+  }
+
+  .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar
+    > p:nth-child(4) {
+    flex-grow: 4 !important;
+    text-align: center !important;
+  }
+
+  .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar
+    > div:nth-child(5) {
+    flex-grow: 1 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+}
+
+.entityTableContainer {
+  thead {
+    height: 52px;
+  }
+}
+
+.ellipsis-span {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;// 200px;
+  text-overflow: ellipsis;
+}

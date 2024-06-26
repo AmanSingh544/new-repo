@@ -1,0 +1,71 @@
+.infographic-container {
+  display: flex;
+  justify-content: space-between;
+
+  .pieChartContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    height: 100%;
+    .pieChartMain {
+      width: 20vw;
+      padding-left: 0px;
+      #legend-container {
+        display: flex;
+        align-items: center;
+
+        ul {
+          justify-content: flex-start !important;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+.singleViewGraph {
+  display: flex;
+  justify-content: space-between;
+
+  .pieChartContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    height: 100%;
+
+    .pieChartMain {
+      width: 25vw !important;
+    }
+  }
+}
+
+.pieChartMain {
+  display: flex;
+  width: 25vw;
+  padding-left: 20px;
+  #legend-container {
+    display: flex;
+    align-items: center;
+
+    ul {
+      justify-content: flex-start !important;
+      gap: 20px;
+    }
+  }
+}
+
+.pie-legend {
+  width: 30%;
+  ul {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-evenly !important;
+    li {
+      margin-top: 5px !important;
+    }
+  }
+}

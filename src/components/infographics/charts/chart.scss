@@ -1,0 +1,66 @@
+$breakpoint-small: 768px;
+$breakpoint-laptop: 1030px;
+$breakpoint-largeLaptops: 1280px;
+$breakpoint-largeDevices: 1500px;
+
+.legend.lanes,
+.legend.region,
+.legend.buPerformance,
+.legend.EmissionPerformance,
+.legend.processVsEmission {
+  display: none !important;
+}
+
+.col-fixed {
+  width: 100px;
+}
+
+.container-tooltip {
+  width: 30px;
+  height: 1.25px;
+  background-color: black;
+  position: relative;
+}
+.circle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: calc(50% - 3.5px);
+}
+
+#legend-container-bar,
+#legend-container-line,
+#legend-container {
+  padding-bottom: 10px;
+}
+
+#legend-container-bar,
+#legend-container-line {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 5px;
+  }
+}
+@media (min-width: $breakpoint-largeDevices) {
+  #legend-container-bar,
+  #legend-container-line,
+  #legend-container {
+    margin-top: -10px;
+    ul {
+      li {
+        p {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+}
+.legend.supplier {
+  display: none;
+}

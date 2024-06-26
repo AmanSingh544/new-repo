@@ -1,0 +1,378 @@
+.entityMain-Container {
+  overflow-y: scroll;
+  max-height: calc(100vh - 60px);
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiSnackbar-root {
+  width: 100% !important;
+}
+
+.entityHeading {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.entityHeadingText {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #1C2325;
+  font-family: 'Inter', serif;
+}
+
+.enitityHeadingBtns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.uploadPopupMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DownloadPopupMain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+
+  .downloadContentBtn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    height: 63px;
+    padding: 13px 31px;
+    border-radius: 1px;
+    border: 1px dashed #d9d9d9;
+  }
+
+  .downloadContentBtn:active {
+    background: #f2f9ff !important;
+    border: 2px solid #c9dcea !important;
+  }
+}
+
+.MuiDropzoneArea-textContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+}
+
+p.MuiTypography-root.MuiDropzoneArea-text.MuiTypography-h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #6a6a6a;
+}
+
+.selected {
+  .tamplateBtn {
+    display: none;
+  }
+
+  .dropzoneClass {
+    display: none;
+  }
+
+  .uploadBox {
+    border: 2px dashed #87b496;
+  }
+
+  button.MuiButtonBase-root.MuiFab-root.MuiDropzonePreviewList-removeButton {
+    top: 2rem !important;
+    right: -1px !important;
+    left: 23.5rem !important;
+    width: 40px !important;
+    height: 40px !important;
+    opacity: 1 !important;
+    position: absolute !important;
+    transition: 0.5s ease !important;
+    margin-right: 10px;
+  }
+
+  svg.MuiSvgIcon-root.MuiDropzonePreviewList-image {
+    margin: 12px;
+  }
+
+  span.MuiTypography-root.MuiTypography-subtitle1 {
+    margin-left: 0px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6a6a6a;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1280px) {
+  .uploadPopupMain {
+    overflow-y: scroll;
+    min-height: 310px !important;
+    min-width: 510px !important;
+
+    .MuiDropzoneArea-textContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: 120px;
+    }
+
+    .dropzoneClass {
+      min-height: 120px;
+    }
+
+    .uploadBtn {
+      padding: 20px 30px 24px 30px !important;
+    }
+
+    .uploadPopupBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 25px !important;
+      background: rgb(23, 43, 77);
+      border-radius: 3px;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 15px !important;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .selected {
+    .tamplateBtn {
+      display: none;
+    }
+
+    .dropzoneClass {
+      display: none;
+    }
+
+    .uploadBox {
+      border: 2px dashed #87b496;
+    }
+
+    button.MuiButtonBase-root.MuiFab-root.MuiDropzonePreviewList-removeButton {
+      top: 2rem !important;
+      right: -1px !important;
+      left: 23rem !important;
+      width: 40px !important;
+      height: 40px !important;
+      opacity: 1 !important;
+      position: absolute !important;
+      transition: 0.5s ease !important;
+      margin-right: 10px;
+    }
+
+    svg.MuiSvgIcon-root.MuiDropzonePreviewList-image {
+      margin: 12px;
+    }
+
+    span.MuiTypography-root.MuiTypography-subtitle1 {
+      margin-left: 0px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #6a6a6a;
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1500px) {
+  .uploadPopupMain {
+    overflow-y: scroll;
+    min-height: 360px !important;
+    min-width: 500px !important;
+
+    .MuiDropzoneArea-textContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: 160px;
+    }
+
+    .dropzoneClass {
+      min-height: 160px;
+    }
+
+    .uploadBtn {
+      padding: 25px 30px 24px 30px !important;
+    }
+
+    .uploadPopupBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px 25px !important;
+      background: rgb(23, 43, 77);
+      border-radius: 3px;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 15px !important;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .selected {
+    .tamplateBtn {
+      display: none;
+    }
+
+    .dropzoneClass {
+      display: none;
+    }
+
+    .uploadBox {
+      border: 2px dashed #87b496;
+    }
+
+    button.MuiButtonBase-root.MuiFab-root.MuiDropzonePreviewList-removeButton {
+      top: 2rem !important;
+      right: -1px !important;
+      left: 22.5rem !important;
+      width: 40px !important;
+      height: 40px !important;
+      opacity: 1 !important;
+      position: absolute !important;
+      transition: 0.5s ease !important;
+      margin-right: 10px;
+    }
+
+    svg.MuiSvgIcon-root.MuiDropzonePreviewList-image {
+      margin: 12px;
+    }
+
+    span.MuiTypography-root.MuiTypography-subtitle1 {
+      margin-left: 0px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #6a6a6a;
+    }
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+  .uploadPopupMain {
+    overflow-y: scroll;
+    min-height: 380px !important;
+    min-width: 520px !important;
+
+    .MuiDropzoneArea-textContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: 170px;
+    }
+
+    .dropzoneClass {
+      min-height: 170px;
+    }
+
+    .uploadBtn {
+      padding: 30px 30px 24px 30px !important;
+    }
+
+    .uploadPopupBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 25px !important;
+      background: rgb(23, 43, 77);
+      border-radius: 3px;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 16px !important;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .selected {
+    .uploadBox {
+      border: 2px dashed #87b496;
+    }
+
+    button.MuiButtonBase-root.MuiFab-root.MuiDropzonePreviewList-removeButton {
+      top: 2rem !important;
+      right: -1px !important;
+      left: 23.5rem !important;
+      width: 40px !important;
+      height: 40px !important;
+      opacity: 1 !important;
+      position: absolute !important;
+      transition: 0.5s ease !important;
+      margin-right: 10px;
+    }
+
+    svg.MuiSvgIcon-root.MuiDropzonePreviewList-image {
+      margin: 12px;
+    }
+
+    span.MuiTypography-root.MuiTypography-subtitle1 {
+      margin-left: 0px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #6a6a6a;
+    }
+  }
+}
+
+@media (min-width: 1700px) {
+  .uploadPopupMain {
+    overflow-y: scroll;
+    min-height: 390px !important;
+    min-width: 530px !important;
+
+    .MuiDropzoneArea-textContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+    }
+
+    .dropzoneClass {
+      min-height: 180px;
+    }
+
+    .uploadBtn {
+      padding: 30px 30px 24px 30px !important;
+    }
+
+    .uploadPopupBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 9px 25px !important;
+      background: rgb(23, 43, 77);
+      border-radius: 3px;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-size: 16px !important;
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .selected {
+    justify-content: space-evenly;
+  }
+}

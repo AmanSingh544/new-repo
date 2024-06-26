@@ -1,0 +1,215 @@
+
+
+.MuiListItemIcon-root.css-cveggr-MuiListItemIcon-root {
+    min-width: 24px;
+}
+
+.MuiListItemIcon-root {
+        min-width: 24px !important;
+}
+
+.masterdata.MuiListItem-root
+,.transformeddata.MuiListItem-root 
+{
+    padding: 8px 0px 8px 22px !important;
+
+    .dd-icon-image {
+        padding-right: 30px !important;
+    }
+}
+
+.closed.transformeddata.MuiListItem-root, .closed.masterdata.MuiListItem-root{
+    padding: 8px 0px 8px 0px !important;
+}
+
+.closed.carbonanalytics,.closed.entitymanagement,.closed.masterdata, .closed.transformeddata,.closed.riskrecommendation{
+    .MuiListItemText-root,.dd-icon-image {
+        display: none !important;
+    }
+}
+
+.opened.datamapping.layer {
+    .subIcon {
+        justify-content: flex-start !important;
+    }
+}
+
+.closed.datamapping.layer,.closed.vehiclemaster,.closed.locationmaster,.closed.executivesummary,
+.closed.detailedsummary,.closed.equivalence, .closed.computations,.closed.scope-transactional,.closed.transformeddata,.closed.simulator {
+    .MuiTypography-root {
+        display: none !important;
+    }
+
+    .subIcon {
+        justify-content: center !important;
+        padding: 8px 0px 8px 0px !important;
+    }
+}
+
+.masterdata {
+    .MuiListItemIcon-root {
+        min-width: 26px !important;
+    }
+}
+
+.transformeddata {
+    .MuiListItemIcon-root {
+        min-width: 15px !important;
+    }
+}
+.list-item-container.datamapping.layer.active{
+    // background-color: #0094BA;
+    background-color: #475052;
+
+    padding: 7px 11px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        color: #f5f5f5;
+        // color: red;
+
+        
+
+    }
+
+}
+
+.ca_active.carbonanalytics, .master_active.entitymanagement,.transactional_active.entitymanagement,
+.master_active.masterdata,.transactional_active.transformeddata,.rr_active.riskrecommendation  {
+    // background-color: #f5f5f5;
+    background-color: #b1000e;
+
+}
+
+.opened.scope-transactional {
+    .scope-transactional.subIcon {
+        padding: 8px 0px 8px 32px !important;
+    }
+    .scope-transactional.activesub {
+        // background-color: #0094BA;
+        background-color: #475052;
+
+        padding: 8px 0px 8px 30px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        color: #f5f5f5;
+        // color: red;
+
+    }
+    }
+}
+
+.closed.scope-transactional {
+    .scope-transactional.subIcon {
+        padding: 8px 0px 8px 0px !important;
+    }
+    .scope-transactional.activesub {
+        // background-color: #0094BA;
+        background-color: #475052;
+
+        padding: 8px 0px 8px 0px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        color: #f5f5f5;
+        // color: red;
+
+    }
+    }
+}
+
+.opened.vehiclemaster {
+    .vehiclemaster.subIcon {
+        padding: 8px 0px 8px 30px !important;
+    }
+    .vehiclemaster.activesub {
+        // background-color: #0094BA;
+        background-color: #475052;
+
+        padding: 8px 0px 8px 30px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        color: #f5f5f5;
+        // color: red;
+
+    }
+    }
+}
+
+.closed.vehiclemaster {
+    .vehiclemaster.subIcon {
+        padding: 8px 0px 8px 0px !important;
+    }
+    .vehiclemaster.activesub {
+        // background-color: #0094BA;
+        background-color: #475052;
+
+        padding: 8px 0px 8px 0px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        color: #f5f5f5;
+        // color: red;
+
+    }
+    }
+}
+
+.opened.locationmaster {
+
+    .locationmaster.subIcon {
+        padding: 8px 0px 8px 30px !important;
+    }
+    .locationmaster.activesub {
+        // background-color: #0094BA;
+        background-color: #475052;
+
+        padding: 8px 0px 8px 30px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        color: #f5f5f5;
+        // color: red;
+
+    }
+    }
+}
+
+.closed.locationmaster {
+    .locationmaster.subIcon {
+        padding: 8px 0px 8px 0px !important;
+    }
+    .locationmaster.activesub {
+        // background-color: #0094BA;
+        background-color: #475052;
+
+        padding: 8px 0px 8px 0px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        color: #f5f5f5;
+        // color: red;
+
+    }
+    }
+}
+
+.executivesummary.activesub,.detailedsummary.activesub,.equivalence.activesub,
+.computations.activesub,.scope-transactional.activesub,.subIcon.simulator.activesub{
+    // background-color: #0094BA;
+    background-color: #475052;
+
+    padding: 8px 0px 8px 22px;// !important;
+.MuiTypography-root.MuiTypography-body1{
+    // color: #f5f5f5;
+    color: #fff;
+
+
+}
+}
+
+.list-item-container.datamapping.layer{
+.MuiListItemIcon-root.css-cveggr-MuiListItemIcon-root{
+    min-width:24px !important;
+}
+}
+.subIcon.datamapping.layer{
+    padding: 0px !important;
+    gap: 3px !important;
+    .MuiTypography-root.MuiTypography-body1{
+        font-size: 13px !important;
+    }
+   
+}
+
+.list-item-container.carbonanalytics,.list-item-container.entitymanagement,.list-item-container.datamapping.layer,.list-item-container.riskrecommendation{
+    padding: 8px 11px !important;
+}

@@ -1,0 +1,26 @@
+$breakpoint-small: 768px;
+$breakpoint-laptop: 1030px;
+$breakpoint-largeLaptops: 1280px;
+$breakpoint-largeDevices: 1500px;
+
+.progress-bar-transportation {
+  width: 320px;
+}
+
+@media (min-width: $breakpoint-laptop) and (max-width: 1200px) {
+  .progress-bar-transportation {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: $breakpoint-largeLaptops) {
+  .progress-bar-transportation {
+    width: 300px;
+  }
+}
+
+@media (min-width: $breakpoint-largeLaptops) and (max-width: $breakpoint-largeDevices) {
+  .progress-bar-transportation {
+    width: 320px;
+  }
+}

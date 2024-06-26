@@ -1,0 +1,39 @@
+.GraphDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .simulatorViewPieMain {
+        margin-top: 20px;
+        display: flex;
+        height: 80%;
+        align-items: center;
+    }
+
+    .simulatorViewPieCont {
+        height: 100%;
+    }
+
+    .simulatorViewBarMain {
+
+        height: 83%;
+        // overflow: hidden;
+        overflow-x: scroll !important;
+        display: flex;
+        margin: 0px !important;
+        justify-content: flex-end;
+
+        .simulatorViewBarCont {
+            height: 90%;
+            margin-top: 8px;
+        }
+    }
+
+    .lineSimulatorMain {
+        height: 90% !important;
+        margin: 0px !important;
+        .lineSimulatorCont{
+            height: 80% !important;
+        }
+    }
+}

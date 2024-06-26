@@ -1,0 +1,118 @@
+/* Table container */
+.filtertableContainer {
+  border-radius: 10px;
+}
+
+/* Table styling */
+.filterTableClass {
+  width: 100%; /* Full width */
+  table-layout: fixed; /* Fixed layout for equal column width */
+  border-spacing: 0; /* Remove default cell spacing */
+}
+
+/* Table header */
+.filtertableContainer thead {
+  background-color: #e2f4ff; /* Light blue background */
+  font-weight: bold;
+  height: 52px;
+  border-bottom: 2px solid #aad9fc; /* Bottom border for separation */
+}
+
+/* Table cells */
+.filterTableClass td, .filterTableClass th {
+  // padding: 12px 8px; /* Adjust // padding as needed */
+  text-align: left; /* Align text left */
+  border-bottom: 1px solid #e0e0e0; /* Light border for cell separation */
+}
+
+/* Table rows */
+.filterTableClass tr {
+  height: 48px;
+}
+#combo-box-demo{
+  width: 100%;
+}
+
+/* General container styling *//* Common styles */
+.advanced-filter-container {
+  // margin-top: 10px;
+  // margin-left: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.clearAllbtn-container {
+  display: flex;
+  align-items: center;
+  // margin-top: 10px;
+  // margin-left: 15px;
+}
+
+.clearAllbtn, .removeBtn {
+  // padding: 8px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.clearAllbtn {
+  background-color: dimgrey;
+}
+
+.removeBtn {
+  background-color: #d9d9d9;
+  margin-right: 10px;
+  text-transform: capitalize;
+  color: #4f4f4f;
+}
+
+.applyBtn {
+  // padding: 8px 25px;
+  background-color: #b1000e;
+  width: 120px;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.applyBtn.disabled {
+  background-color: #4f4f4f;
+  cursor: not-allowed;
+}
+
+/* Table styles */
+.filtertableContainer {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.filterTableClass {
+  width: 100%; /* Full width */
+  table-layout: fixed; /* Fixed layout for equal column width */
+  border-spacing: 0; /* Remove default cell spacing */
+}
+
+.filterTableClass th, .filterTableClass td {
+  // padding: 12px 8px; /* Adjust // padding as needed */
+  padding: 10px;
+  text-align: left; /* Align text left */
+  border-bottom: 1px solid #e0e0e0; /* Light border for cell separation */
+}
+
+.filterTableClass tr {
+  height: 48px; /* Adjust height as needed */
+}
+
+.filterHeadingText {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #1C2325;
+  font-family: 'Inter', serif;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+}

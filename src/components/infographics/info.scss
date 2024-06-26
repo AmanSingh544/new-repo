@@ -1,0 +1,1684 @@
+$breakpoint-small: 768px;
+$breakpoint-laptop: 1030px;
+$breakpoint-largeLaptops: 1280px;
+$breakpoint-largeDevices: 1500px;
+
+.emission-transportation-text,
+.emission-transportation-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.activeMove {
+  background: #d4d4d4;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#legend-container-costfuel {
+  ul {
+    flex-direction: column !important;
+    height: 85% !important;
+    justify-content: center !important;
+
+    li {
+      padding: 5px 0px !important;
+
+      p {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.donut-container.emissionScopes {
+  margin-top: -10px;
+  justify-content: space-around;
+}
+
+.bar-chart-container {
+  overflow-y: auto;
+  // overflow-x: scroll; // old me
+  width: 100%;
+  margin: 45px 15px !important;
+}
+
+.bar-chart-container-emission.region {
+  canvas {
+    height: 100% !important;
+  }
+}
+
+.bar-chart-container-emission.lanes {
+  display: flex;
+  overflow-y: hidden;
+
+  canvas {
+    align-self: center;
+  }
+}
+
+.infographic-container:hover {
+  border: 0.3px solid #19315b !important;
+  box-shadow: 0px 0px 10px #19315b;
+  transition: border 700ms, box-shadow 700ms;
+}
+
+.infographic-grid {
+  padding: 0px 11px 22px 11px !important;
+}
+
+.emission-transportation-value {
+  margin-left: 10px;
+}
+
+.line-chart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.donut-container,
+.line-chart-container,
+.bar-chart-container {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donut-multi-container {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.multi-donut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bar-chart-container.region,
+.bar-chart-container.lanes,
+.bar-chart-container.ContinentEmisn{
+  width: 96% ;
+  // overflow-x: hidden; // old commented me
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 87px !important; // me new
+
+
+  .bar-chart-container-emission.region,
+  .bar-chart-container-emission.lanes,
+  .bar-chart-container-emission.ContinentEmisn {
+    height: 90% !important;
+    width: 140% !important;
+    // overflow-x: hidden !important; // old commented me
+
+    overflow-x: scroll !important; //me new 
+    overflow-y: hidden !important;
+  }
+}
+
+.line-chart-container,
+.bar-chart-container {
+  position: relative;
+
+  img {
+    width: 10px;
+    position: absolute;
+    top: 25%;
+    left: 1%;
+  }
+}
+
+.bar-chart-container.lanes,
+.bar-chart-container.ContinentEmisn
+
+ {
+  margin: 20px auto !important;
+}
+
+.bar-chart-container.totalScope3,
+.bar-chart-container.region-total-scope-1,
+.bar-chart-container.region-total-scope-2 {
+  margin: 20px 10px;
+
+  #legend-container-bar-region-total-scope-2 {
+    display: none !important;
+  }
+}
+
+.bar-chart-container.lanes.single {
+  margin: 5px auto;
+}
+
+.bar-chart-container.region {
+  margin: 15px;
+}
+
+.emission-transportation-singleview {
+  height: 100%;
+
+  .emission-transportation {
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0px !important;
+
+    .innner-transport {
+      width: 100%;
+      margin: 10px 0px 10px 10px;
+    }
+  }
+}
+
+.infographic-container-label {
+  font-size: 14.25px;
+}
+
+.dnoutMainClass.ExtractionProductionTransmissionVsEmission {
+  height: 100% !important;
+  justify-content: flex-start !important;
+  margin-left: 30px;
+  .donut-container.ExtractionProductionTransmissionVsEmission {
+    display: flex;
+    flex-direction: row !important;
+    width: 21vw;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px !important;
+
+    #legend-container-ExtractionProductionTransmissionVsEmission {
+      ul {
+        display: flex;
+        width: 100%;
+        justify-content: center !important;
+        flex-direction: column !important;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) and (max-width: $breakpoint-largeLaptops) {
+  .infographic-grid {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1280px) {
+  #legend-container-costfuel {
+    ul {
+      li {
+        p {
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .infographic-grid {
+    height: 380px;
+  }
+
+  .donut-multi-container.cost-fuel {
+    width: 18vw;
+  }
+
+  .emissionScope {
+    .donut-container.emissionScopes {
+      display: flex;
+      margin-left: 20px;
+      flex-direction: row !important;
+
+      #legend-container {
+        display: flex;
+        align-items: center;
+
+        ul {
+          justify-content: flex-start !important;
+
+          li {
+            margin-left: 0px !important;
+
+            p {
+              width: 70px;
+              white-space: break-spaces;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .donut-container.emissionScopes {
+    #legend-container {
+      ul {
+        justify-content: center !important;
+        gap: 5px;
+      }
+    }
+
+    #legend-container-ghg {
+      ul {
+        flex-direction: column !important;
+        padding-top: 50px !important;
+        height: 85% !important;
+      }
+    }
+  }
+
+  .ghgEmissionInfo {
+    .ghgEmission {
+      margin: 0px 24px !important;
+      height: 80% !important;
+
+      canvas {
+        height: 310px !important;
+      }
+
+      #legend-container-ghg {
+        padding-top: 44px !important;
+        height: 83% !important;
+      }
+    }
+  }
+
+  .emissionTimeline {
+    .line-chart-container {
+      .line-chart-main {
+        margin-top: 20px !important;
+      }
+
+      #legend-container-line {
+        padding-bottom: 15px;
+
+        ul {
+          margin-top: 15px !important;
+          flex-direction: row !important;
+          justify-content: center !important;
+          gap: 5px;
+        }
+      }
+    }
+  }
+
+  .emissionSupplier {
+    .bar-chart-container {
+      img {
+        width: 8px !important;
+        position: absolute;
+        top: 15% !important;
+        left: 1.75%;
+      }
+    }
+  }
+
+  .salesVsEmission {
+    .bar-chart-container {
+      margin: 0px !important;
+
+      #legend-container-bar {
+        height: 10% !important;
+      }
+
+      img {
+        width: 9px !important;
+        position: absolute;
+        top: 15% !important;
+        left: 1.5%;
+      }
+    }
+  }
+
+  .multi-donut {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .donut-multi-container.cost-fuel {
+      margin: 0px !important;
+      align-items: center;
+    }
+
+    #legend-container-costfuel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .dnoutMainClass.ExtractionProductionTransmissionVsEmission {  
+    margin-left: 20px;
+    .donut-container.ExtractionProductionTransmissionVsEmission {  
+      width: 22.5vw;
+      gap: 10px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) and (max-width: 1100px) {
+
+  .line-chart-container,
+  .bar-chart-container {
+    position: relative;
+
+    img {
+      width: 10px;
+      position: absolute;
+      top: 0px !important;
+      left: 1%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) and (max-width: $breakpoint-largeLaptops) {
+
+  .donut-container.emissionScopes {
+    width: 24vw;
+  }
+
+  .donut-container.ghgEmission {
+    display: flex !important;
+    flex-direction: row !important;
+
+    width: 28vw;
+
+    #legend-container {
+      ul {
+        flex-direction: column !important;
+      }
+    }
+  }
+
+  .donut-container.equivalence {
+    width: 25.85vw;
+    position: relative;
+  }
+
+  .line-chart-container,
+  .bar-chart-container {
+    position: relative;
+
+    img {
+      width: 10px;
+      position: absolute;
+      top: 5%;
+      left: 1%;
+    }
+  }
+
+  .bar-chart-container.lanes {
+    margin: 15px auto;
+  }
+
+  .NSCMDROPDownFormControl {
+    min-width: 100px;
+
+    .NSCMDROPDown {
+      height: 30px;
+      font-size: 13px !important;
+      color: #333333;
+      font-weight: 400;
+
+      // padding-left: 0px !important;
+      #demo-simple-select-NSCM {
+        padding-left: 2px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: $breakpoint-largeLaptops) {
+  .bar-chart-container.single {
+    img {
+      width: 9px;
+      position: absolute;
+      top: 20%;
+      left: 1%;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-largeLaptops) and (max-width: $breakpoint-largeDevices) {
+  .donut-multi-container.cost-fuel {
+    width: 20vw;
+  }
+
+  .ghgEmissionInfo {
+    .ghgEmission {
+      #legend-container-ghg {
+        padding-top: 51px !important;
+        height: 76% !important;
+      }
+    }
+  }
+
+  .emissionTimeline {
+    .line-chart-container {
+      .line-chart-main {
+        img {
+          width: 9px !important;
+          position: absolute;
+          top: 22% !important;
+          left: 1.5% !important;
+        }
+
+        margin-top: 22px !important;
+      }
+
+      #legend-container-line {
+        padding-bottom: 30px !important;
+
+        ul {
+          margin-top: 20px !important;
+          flex-direction: row !important;
+          justify-content: center !important;
+          gap: 5px;
+        }
+      }
+    }
+  }
+
+  .emissionSupplier {
+    .bar-chart-container {
+      img {
+        width: 9px !important;
+        position: absolute;
+        top: 15% !important;
+        left: 1.75%;
+      }
+    }
+  }
+
+  .salesVsEmission {
+    .bar-chart-container {
+      #legend-container-bar {
+        height: 10% !important;
+      }
+
+      img {
+        width: 9px;
+        position: absolute;
+        top: 25% !important;
+        left: 1.25%;
+      }
+    }
+  }
+
+  .emissionScope {
+    .dnoutMainClass {
+      margin-right: 50px !important;
+    }
+
+    .donut-container.emissionScopes {
+      display: flex;
+      margin-left: 50px;
+      flex-direction: row !important;
+
+      #legend-container {
+        display: flex;
+        align-items: center;
+
+        ul {
+          justify-content: flex-start !important;
+
+          li {
+            margin-left: 0px !important;
+
+            p {
+              width: 190px;
+              white-space: break-spaces;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .donut-container.emissionScopes {
+    width: 23vw;
+
+    #legend-container-ghg {
+      ul {
+        flex-direction: column !important;
+        padding-top: 50px !important;
+        height: 85% !important;
+      }
+    }
+  }
+
+  .infographic-grid {
+    height: 420px;
+  }
+
+  .donut-container.ghgEmission {
+    width: 24vw;
+    margin-left: 50px !important;
+  }
+
+  .donut-container.equivalence {
+    width: 25vw;
+    position: relative;
+  }
+
+  .line-chart-container,
+  .bar-chart-container {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 25%;
+      left: 1%;
+    }
+  }
+
+  .bar-chart-container.single {
+    img {
+      width: 9px;
+      position: absolute;
+      top: 28%;
+      left: 1%;
+    }
+  }
+
+  .multi-donut {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .donut-multi-container.cost-fuel {
+      margin: 0px !important;
+      align-items: center;
+    }
+
+    #legend-container-costfuel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .buYearInfo,
+  .buMonthInfo {
+    width: 85px !important;
+
+    label {
+      font-size: 14px !important;
+      padding-top: 4px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 15px !important;
+      padding: 12px;
+    }
+  }
+
+  .buYearInfoMenu,
+  .buWeekInfoMenu,
+  .buMonthInfoMenu {
+    font-size: 15px !important;
+  }
+
+  .buWeekInfo {
+    width: 87px !important;
+
+    label {
+      font-size: 14px !important;
+      padding-top: 4px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 15px !important;
+      padding: 12px;
+    }
+  }
+
+  .scopeStream {
+    min-width: 130px !important;
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 16px !important;
+      padding: 11px;
+    }
+  }
+  .dnoutMainClass.ExtractionProductionTransmissionVsEmission {  
+    margin-left: 30px;
+    .donut-container.ExtractionProductionTransmissionVsEmission {  
+      width: 22.5vw;
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1320px) {
+  .emissionScope {
+    .dnoutMainClass {
+      margin-right: 50px !important;
+    }
+
+    .donut-container.emissionScopes {
+      display: flex;
+      padding-top: 20px;
+      margin-left: 25px;
+      flex-direction: row !important;
+
+      #legend-container {
+        display: flex;
+        align-items: center;
+
+        ul {
+          justify-content: flex-start !important;
+
+          li {
+            margin-left: 0px !important;
+            padding-top: 5px;
+
+            p {
+              width: 70px;
+              white-space: break-spaces;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ghgEmissionInfo {
+    .donut-container.ghgEmission {
+      margin-left: 30px !important;
+    }
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1750px) {
+  .ghgEmissionInfo {
+    .ghgEmission {
+      #legend-container-ghg {
+        padding-top: 51px !important;
+        height: 76% !important;
+      }
+    }
+  }
+
+  .emissionSupplier {
+    .bar-chart-container {
+      img {
+        width: 11px !important;
+        position: absolute;
+        top: 25% !important;
+        left: 1.25%;
+      }
+    }
+  }
+
+  .donut-container.ghgEmission {
+    width: 23vw;
+  }
+
+  .emissionTimeline {
+    .line-chart-container {
+      .line-chart-main {
+        margin-top: 28px !important;
+      }
+
+      #legend-container-line {
+        padding-bottom: 30px;
+
+        ul {
+          margin-top: 20px !important;
+          flex-direction: row !important;
+          justify-content: center !important;
+          gap: 5px;
+        }
+      }
+    }
+  }
+
+  .salesVsEmission {
+    .bar-chart-container {
+      margin: 0px !important;
+
+      #legend-container-bar {
+        height: 10% !important;
+      }
+
+      img {
+        width: 12px;
+        position: absolute;
+        top: 20% !important;
+        left: 1%;
+      }
+    }
+  }
+
+  .emissionScope {
+    .donut-container.emissionScopes {
+      display: flex;
+      flex-direction: row !important;
+      justify-content: center;
+      align-items: center;
+      width: 21vw;
+
+      #legend-container {
+        display: flex;
+        align-items: center;
+
+        ul {
+          justify-content: flex-start !important;
+
+          li {
+            margin-left: 0px !important;
+            padding-top: 5px;
+
+            p {
+              width: 190px;
+              white-space: break-spaces;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .multi-donut {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .donut-multi-container.cost-fuel {
+      margin: 0px !important;
+      align-items: center;
+    }
+
+    #legend-container-costfuel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .dnoutMainClass.ExtractionProductionTransmissionVsEmission {  
+    margin-left: 60px;
+    .donut-container.ExtractionProductionTransmissionVsEmission {  
+      width: 21vw;
+      gap: 50px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-largeDevices) {
+  .donut-multi-container.cost-fuel {
+    width: 18vw;
+  }
+
+  .infographic-grid {
+    height: 460px;
+  }
+
+  .donut-container.equivalence {
+    width: 19vw;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .infographic-container-label {
+    font-size: 16.25px;
+  }
+
+  .emission-transportation-text,
+  .emission-transportation-value {
+    font-size: 14px !important;
+  }
+
+  .emission-activity-value,
+  .emission-activity-label {
+    font-size: 14px !important;
+  }
+
+  .line-chart-container,
+  .bar-chart-container {
+    position: relative;
+
+    img {
+      width: 12px;
+      position: absolute;
+      top: 25%;
+      left: 0.5%;
+    }
+  }
+
+  .bar-chart-container.lanes {
+    max-width: 100%;
+  }
+
+  .bar-chart-container.single {
+    img {
+      width: 9px;
+      position: absolute;
+      top: 30%;
+      left: 1%;
+    }
+  }
+
+  .buYearInfo,
+  .buMonthInfo {
+    width: 90px !important;
+
+    label {
+      font-size: 15px !important;
+      padding-top: 5px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 16px !important;
+      padding: 12px;
+    }
+  }
+
+  .buYearInfoMenu,
+  .buWeekInfoMenu,
+  .buMonthInfoMenu {
+    font-size: 16px !important;
+  }
+
+  .buWeekInfo {
+    width: 92px !important;
+
+    label {
+      font-size: 14px !important;
+      padding-top: 5px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 16px !important;
+      padding: 12px;
+    }
+  }
+
+  .scopeStream {
+    min-width: 130px !important;
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 16px !important;
+      padding: 11px;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+  .bar-chart-container {
+    position: relative;
+
+    img {
+      width: 9px;
+      position: absolute;
+      top: 25% !important;
+      left: 1.25%;
+    }
+  }
+
+  .emissionTimeline {
+    .line-chart-container {
+      .line-chart-main {
+        img {
+          width: 9px !important;
+          position: absolute;
+          top: 20% !important;
+          left: 1.5% !important;
+        }
+
+        margin-top: 20px !important;
+      }
+
+      #legend-container-line {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .buYearInfo,
+  .buMonthInfo {
+    width: 78px !important;
+
+    label {
+      font-size: 14px !important;
+      padding-top: 2px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 14px !important;
+      padding: 11px;
+      padding-left: 6px !important;
+    }
+  }
+
+  .buYearInfoMenu,
+  .buWeekInfoMenu,
+  .buMonthInfoMenu {
+    font-size: 14px !important;
+  }
+
+  .buWeekInfo {
+    min-width: 75px !important;
+
+    label {
+      font-size: 12px !important;
+      padding-top: 2px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 13px !important;
+      padding: 11px;
+    }
+  }
+
+  .scopeStream {
+    width: 110px !important;
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 13px !important;
+      padding: 11px;
+    }
+  }
+}
+
+@media (min-width: 1750px) {
+
+  .buYearInfo,
+  .buMonthInfo {
+    width: 100px !important;
+
+    label {
+      font-size: 16px !important;
+      padding-top: 6px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 17px !important;
+      padding: 12px;
+    }
+  }
+
+  .buWeekInfo {
+    width: 100px !important;
+
+    label {
+      font-size: 16px !important;
+      padding-top: 6px !important;
+    }
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 17px !important;
+      padding: 12px;
+    }
+  }
+
+  .buYearInfoMenu,
+  .buWeekInfoMenu,
+  .buMonthInfoMenu {
+    font-size: 17px !important;
+  }
+
+  .scopeStream {
+    min-width: 130px !important;
+
+    .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+      font-size: 16px !important;
+      padding: 11px;
+    }
+  }
+
+  .donut-container.ghgEmission {
+    width: 21vw;
+  }
+
+  .multi-donut {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .donut-multi-container.cost-fuel {
+      margin: 0px !important;
+      align-items: center;
+    }
+
+    #legend-container-costfuel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .ghgEmissionInfo {
+    .ghgEmission {
+      #legend-container-ghg {
+        padding-top: 35px !important;
+        height: 76% !important;
+      }
+    }
+  }
+
+  .salesVsEmission {
+    .bar-chart-container {
+      margin: 15px 10px !important;
+
+      #legend-container-bar {
+        height: 10% !important;
+      }
+
+      img {
+        width: 12px;
+        position: absolute;
+        top: 28% !important;
+        left: 1%;
+      }
+    }
+  }
+
+  .emissionSupplier {
+    .bar-chart-container {
+      margin: 0px 10px !important;
+      overflow-y: auto;
+
+      img {
+        width: 12px !important;
+        position: absolute;
+        top: 30% !important;
+        left: 1.25%;
+      }
+    }
+  }
+
+  .bar-chart-container {
+    position: relative;
+
+    img {
+      width: 9px;
+      position: absolute;
+      top: 44% !important;
+      left: 1%;
+    }
+  }
+
+  .emissionScope {
+    .donut-container.emissionScopes {
+      display: flex;
+      flex-direction: row !important;
+      justify-content: center;
+      align-items: center;
+      width: 21vw;
+
+      #legend-container {
+        display: flex;
+        align-items: center;
+
+        ul {
+          justify-content: flex-start !important;
+
+          li {
+            margin-left: 0px !important;
+            padding-top: 5px;
+
+            p {
+              width: 190px;
+              white-space: break-spaces;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .emissionTimeline {
+    .line-chart-container {
+      .line-chart-main {
+        margin-top: 10px !important;
+
+        img {
+          width: 13px !important;
+          position: absolute;
+          top: 31% !important;
+          left: 0.5% !important;
+        }
+
+        canvas {
+          height: 340px !important;
+          width: 674px !important;
+        }
+      }
+
+      #legend-container-line {
+        padding-bottom: 30px;
+
+        ul {
+          margin-top: 20px !important;
+          flex-direction: row !important;
+          justify-content: center !important;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-largeDevices) and (max-width: 1700px) {
+  .donut-container.emissionScopes {
+    width: 22vw;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 1800px) {
+  .donut-container.emissionScopes {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1800px) {
+  .donut-container.emissionScopes {
+    width: 17.5vw;
+  }
+}
+
+#legend-container,
+#legend-container-eq {
+  ul {
+    flex-wrap: wrap !important;
+    margin-top: -30px !important;
+  }
+}
+
+.donut-container.ghgEmission {
+  display: flex !important;
+  flex-direction: row !important;
+  height: 90% !important;
+  justify-content: flex-start;
+
+  #legend-container-ghg {
+    ul {
+      flex-direction: column !important;
+      padding-top: 56px !important;
+      height: 82% !important;
+    }
+  }
+}
+
+.activity-across {
+  display: flex !important;
+
+  .emission-main-cont {
+    height: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .nothingViewMainCont {
+      height: 100%;
+      align-items: center;
+    }
+
+    .emission-activity {
+      width: 100%;
+    }
+  }
+}
+
+.emissionTimeline {
+  #legend-container-line {
+    ul {
+      pointer-events: none;
+    }
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1150px) {
+  .emissionSupplier {
+    .bar-chart-container {
+      img {
+        width: 9px;
+        position: absolute;
+        top: 10%;
+        left: 1.5%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .emissionSupplier {
+    .bar-chart-container {
+      img {
+        width: 11px !important;
+        position: absolute;
+        top: 23% !important;
+        left: 1.5%;
+      }
+    }
+  }
+}
+
+.infographic-container.emissionScope {
+  .dnoutMainClass {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .donut-container.emissionScopes {
+      margin: 0px !important;
+    }
+  }
+}
+
+.infographic-container.ghgEmissionInfo {
+  .dnoutMainClass {
+    height: 100%;
+    justify-content: flex-start !important;
+    align-items: center;
+
+    .donut-container.ghgEmission {
+      margin: 0px !important;
+    }
+  }
+}
+
+.infographic-container.totalScope1emissionvsCategories {
+  .bar-chart-container.region-total-scope-1 {
+    margin: 3px !important;
+    margin-right: 5px !important;
+    width: 100% !important;
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+
+    .bar-chart-container-emission.regionTotalScope1 {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px !important;
+    }
+  }
+}
+
+.infographic-container.totalScope2emissionvsCategories {
+  .bar-chart-container.region-total-scope-2 {
+    margin: 3px !important;
+    margin-right: 5px !important;
+    width: 100% !important;
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+
+    .bar-chart-container-emission.regionTotalScope2 {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px !important;
+    }
+  }
+}
+
+.infographic-container.emissionSupplier {
+  .bar-chart-container.supplier {
+    .supplier {
+      height: 100% !important;
+    }
+  }
+}
+
+.infographic-container {
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+
+  .emission-transportation {
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: flex-start !important;
+    margin: 10px 0px !important;
+
+    .innner-transport {
+      width: 100%;
+      margin: 10px 0px 10px 10px;
+    }
+  }
+
+  .emission-activity {
+    display: flex;
+    margin: 15px 20px;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .emission-activity-value {
+      margin-left: 10px;
+      color: #0a4a7e;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  .bar-chart-container.totalScope3 {
+    .bar-chart-container-emission.totalScope3 {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .legend.totalScope3 {
+      display: none;
+    }
+  }
+
+  .bar-chart-container.processVsEmission,
+  .bar-chart-container.supplierVsEmission,
+  .bar-chart-container.buPerformance,
+  .bar-chart-container.EmissionPerformance,
+  .bar-chart-container.downStreamAssetTypeVsEmission,
+  .bar-chart-container.SalesVsEmission {
+    .legend.supplierVsEmission {
+      display: none;
+    }
+
+    .processVsEmission,
+    .supplierVsEmission,
+    .buPerformance,
+    .EmissionPerformance,
+    .downStreamAssetTypeVsEmission,
+    .SalesVsEmission {
+      height: 96%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .bar-chart-container.buPerformance {
+    margin: 0px !important;
+    height: 100%;
+    width: 96%;
+    margin-left: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .buPerformance {
+      height: 95% !important;
+      width: 100%;
+    }
+  }
+  .bar-chart-container.EmissionPerformance {
+    margin: 0px !important;
+    height: 100%;
+    width: 96%;
+    margin-left: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .EmissionPerformance {
+      height: 95% !important;
+      width: 100%;
+    }
+  }
+  
+  .bar-chart-container.downStreamAssetTypeVsEmission {
+    margin: 0px !important;
+    height: 100%;
+    width: 96%;
+    margin-left: 5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .downStreamAssetTypeVsEmission {
+      height: 95% !important;
+      width: 100%;
+    }
+  }
+
+  .UpStreamAssetTypeVsEmission {
+    justify-content: flex-end !important;
+
+    .buPerformance.UpStreamAssetTypeVsEmission {
+      height: 70% !important;
+      margin-bottom: 20px !important;
+    }
+  }
+
+  .UpStreamLessorVsEmission,
+  .NonSCM,
+  .rmpo {
+    justify-content: flex-end !important;
+
+    .buPerformance.UpStreamLessorVsEmission,
+    .buPerformance.NonSCM,
+    .buPerformance.rmpo {
+      height: 90% !important;
+      margin-bottom: 20px !important;
+    }
+  }
+
+  .bar-chart-container.WasteProcessingCompaniesVsEmission.single,
+  .bar-chart-container.SoldProductVsEmissions.single {
+    margin: 0px 0px 20px 5px !important;
+    justify-content: flex-end;
+    overflow: hidden;
+
+    .WasteProcessingCompaniesVsEmission,
+    .SoldProductVsEmissions {
+      overflow: hidden;
+      height: 90% !important;
+    }
+
+    #legend-container-bar-WasteProcessingCompaniesVsEmission,
+    #legend-container-bar-SoldProductVsEmissions {
+      display: none;
+    }
+  }
+
+  .bar-chart-container.franchise-Wise-Emission.scrollbar-horizontal {
+    overflow: hidden;
+    margin: 0px !important;
+
+    .franchise-Wise-Emission {
+      height: 100%;
+    }
+  }
+
+  .bar-chart-container {
+
+    &.downstream-Waste-Management-Vs-Emission.scrollbar-horizontal,
+    &.upstream-Waste-Management-Vs-Emission.scrollbar-horizontal,
+    &.dedicated-Vehicle-Type-Vs-Emissions.scrollbar-horizontal,
+    &.outsourced-Vehicle-Type-Vs-Emissions.scrollbar-horizontal,
+    &.downstream-Waste-Management-Vs-Emission.scrollbar-horizontal
+    {
+      overflow-x: hidden;
+      margin: 0 !important;
+
+      .DownstreamWasteManagementVsEmission,
+      .DedicatedVehicleTypeVsEmissions,
+      .OutsourcedVehicleTypeVsEmissions,
+      .UpstreamWasteManagementVsEmission,
+      .InvestmentCompanybasedEmission {
+        height: 100%;
+
+        .horizotalArrow {
+          display: none;
+        }
+      }
+
+      #legend-container-bar {
+        display: none;
+      }
+    }
+
+    &.FuelTypeConsumptionsVsEmissions.single {
+      overflow: hidden;
+      margin: 0px 5px !important;
+      justify-content: flex-end !important;
+
+      .FuelTypeConsumptionsVsEmissions {
+        height: 80% !important;
+        margin-bottom: 20px !important;
+      }
+
+      .legend.FuelTypeConsumptionsVsEmissions {
+        display: none;
+      }
+    }
+    &.ProductTypeVsEmission.single {
+      overflow: hidden;
+      margin: 0px 5px !important;
+      justify-content: flex-end !important;
+
+      .ProductTypeVsEmission {
+        height: 80% !important;
+        margin-bottom: 20px !important;
+      }
+
+      .legend.ProductTypeVsEmission {
+        display: none;
+      }
+    }
+
+
+    &.SpendVsEmission.single {
+      margin: 0px 5px !important;
+      justify-content: flex-end !important;
+
+      .SpendVsEmission {
+        height: 80% !important;
+      }
+
+      .legend.SpendVsEmission {
+        height: 10% !important;
+      }
+    }
+
+    &.PurchasedElectricityConsumptionVsEmission.single {
+      margin: 0px 5px !important;
+      justify-content: flex-end !important;
+
+      .PurchasedElectricityConsumptionVsEmission {
+        height: 80% !important;
+      }
+
+      .legend.PurchasedElectricityConsumptionVsEmission {
+        height: 10% !important;
+      }
+    }
+  }
+
+  .bar-chart-container.lanes.scrollbar-horizontal.single.upstreamNetworksVsEmission {
+    margin: 0px 5px !important;
+  }
+
+  .line-chart-container {
+
+    &.detailRefrigeration,
+    &.dualYLine {
+
+      .line-chart-main.detailRefrigeration,
+      .dualYLine {
+        height: 90% !important;
+        margin-top: 0px !important;
+      }
+    }
+
+    &.detailRefrigerationFuel,
+    &.dualYLine {
+
+      .line-chart-main.detailRefrigerationFuel,
+      .dualYLine {
+        height: 90% !important;
+        margin-top: 0px !important;
+      }
+    }
+  }
+}
+
+.NSCMDROPDownFormControl {
+  min-width: 100px;
+
+  .NSCMDROPDown {
+    height: 30px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+    background: #EBEBEB !important;
+  }
+}
+
+.emissionScope {
+  .donut-container.emissionScopes {
+    display: flex;
+    flex-direction: row !important;
+
+    #legend-container {
+      display: flex;
+      align-items: center;
+
+      ul {
+        overflow-y: auto !important;
+
+        li {
+          p {
+            width: 190px;
+          }
+        }
+      }
+    }
+  }
+
+  .donut-container.emissionScopes.enabledInfoClick {
+    #legend-container {
+      ul {
+        overflow-y: auto !important;
+      }
+    }
+  }
+
+  .donut-container.emissionScopes.enabledInfoClick.Scope-3 {
+    #legend-container {
+      ul {
+        overflow-y: auto !important;
+        height: 250px !important;
+      }
+    }
+  }
+}
+
+.franchise-Wise-Emission {
+  height: 100% !important;
+}
+
+img.righArrow {
+  width: 10px;
+  left: 97% !important;
+}

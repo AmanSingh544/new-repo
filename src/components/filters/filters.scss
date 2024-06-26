@@ -1,0 +1,371 @@
+$breakpoint-small: 768px;
+$breakpoint-laptop: 1030px;
+$breakpoint-largeLaptops: 1280px;
+$breakpoint-largeDevices: 1500px;
+
+.MuiSelect-icon {
+  top: calc(50% - 0.5em) !important;
+}
+
+.MuiSelect-select:focus {
+  background: transparent !important;
+}
+
+.calendar-header {
+  cursor: pointer;
+  padding: 8px 20px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin: 0% 1%;
+  width: 33%;
+  color: #1d1e1f;
+}
+
+.activeCalendar {
+  background: #00316d;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.filters-container {
+  margin: 15px 5px 0px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.grid-fill {
+  margin-top: 20px;
+  margin-bottom: 0px !important;
+  padding-bottom: 15px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-calendar {
+  color: #276aa5;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+img.select-dropdown-icon-up {
+  transform: rotate(180deg);
+}
+
+img.select-dropdown-icon-down {
+  transform: rotate(0);
+}
+
+.select-arrow {
+  margin-right: 4px;
+  margin-top: 4px;
+  width: 13px;
+  cursor: pointer;
+}
+
+.calendar-filter {
+  cursor: pointer;
+}
+
+@media (min-width: $breakpoint-laptop) and (max-width: $breakpoint-largeLaptops) {
+  .calendar-filter {
+    font-size: 11px;
+    padding: 4.82px 10px;
+    margin: 5px;
+  }
+
+  .button-filters {
+    height: 28.13px !important;
+
+    svg,
+    img {
+      width: 13px !important;
+      height: 13px !important;
+    }
+
+    .button-text {
+      font-size: 11px;
+    }
+  }
+
+  .button-filters.override {
+    .button-text {
+      font-size: 13px;
+    }
+  }
+
+  .grid-filters {
+    padding: 15px;
+  }
+
+  .grid-fill {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-dd {
+    width: 95px;
+    height: 28.14px;
+    margin: 2px !important;
+
+    .MuiOutlinedInput-input {
+      font-size: 11px;
+    }
+
+    img {
+      width: 10px;
+      height: 7px;
+      right: 3px !important;
+    }
+  }
+
+  .calenderFilterMainCls {
+    min-width: 96px;
+    height: 30.5px;
+    margin: 2px !important;
+
+    .clanederIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px !important;
+
+      img {
+        height: 25px !important;
+        width: 20px !important;
+      }
+    }
+  }
+
+  .filter-dd.selected {
+    width: 105px;
+  }
+}
+
+@media (min-width: $breakpoint-largeLaptops) {
+  .calendar-filter {
+    font-size: 12px;
+    padding: 7.5px 10px;
+    margin: 5px;
+  }
+
+  .grid-filters {
+    padding: 20px;
+  }
+
+  .grid-fill {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-filters {
+    height: 35px !important;
+
+    svg,
+    img {
+      width: 16px !important;
+      height: 16px !important;
+    }
+
+    .button-text {
+      font-size: 12px;
+    }
+  }
+
+  .button-filters.override {
+    .button-text {
+      font-size: 13px !important;
+    }
+  }
+
+  .filter-dd {
+    width: 96px;
+    height: 30.5px;
+    margin: 2px !important;
+
+    .MuiOutlinedInput-input {
+      font-size: 12px;
+    }
+
+    img {
+      width: 10px;
+      height: 7px;
+      right: 3px !important;
+    }
+  }
+
+  .calenderFilterMainCls {
+    min-width: 110px;
+    height: 30.5px;
+    margin: 2px !important;
+
+    .clanederIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7px !important;
+
+      img {
+        height: 25px !important;
+        width: 20px !important;
+      }
+    }
+  }
+
+  .filter-dd.movementTypeDd {
+    width: 122px;
+    height: 30.5px;
+    margin: 2px !important;
+
+    .MuiOutlinedInput-input {
+      font-size: 12px;
+    }
+
+    img {
+      width: 10px;
+      height: 7px;
+      right: 3px !important;
+    }
+  }
+
+  .filter-dd.selected {
+    width: 120px;
+  }
+
+  .filter-dd.movementTypeDd.selected {
+    width: 130px;
+  }
+}
+
+@media (min-width: $breakpoint-largeDevices) {
+  .filter-dd {
+    width: 121px;
+    height: 40px;
+    margin: 2px !important;
+
+    .MuiOutlinedInput-input {
+      font-size: 14px;
+    }
+  }
+
+  .grid-fill {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .filterMainDiv {
+      .calenderFilterMainCls {
+        min-width: 125px;
+        height: 35.5px !important;
+        margin: 2px !important;
+
+        .clanederIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 7px !important;
+
+          img {
+            height: 25px !important;
+            width: 20px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .filter-dd.movementTypeDd {
+    width: 145px;
+    height: 40px;
+    margin: 2px !important;
+
+    .MuiOutlinedInput-input {
+      font-size: 14px;
+    }
+  }
+
+  .calendar-filter {
+    font-size: 14px;
+    padding: 8.5px 8px;
+    margin: 5px;
+  }
+
+  .singleViewBtn {
+    margin: 4px 0px 0px !important;
+
+    .viewBtnDiv {
+      .viewBtnSingle {
+        padding: 7px !important;
+      }
+    }
+  }
+}
+
+.Menu {
+  padding: 11px !important;
+  margin: 4px 3px !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+.bg-salmon,
+.Menu:hover {
+  background-color: #099cc1 !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+}
+
+.line:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  left: 50%;
+  top: 55%;
+  background: red;
+  border: 1px solid #B1000E;
+  transform: rotate(180deg);
+}
+
+.Menu-Qtr {
+  padding: 10px 16px !important;
+  margin: 4px 15px !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+.bg-salmon-qtr,
+.Menu-Qtr:hover {
+  background-color: #099cc1 !important;
+  color: #fff !important;
+}
+
+.calenderYearMonthMain {
+  ul.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95% !important;
+  }
+}
+
+#calendar {
+  ul.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 {
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}

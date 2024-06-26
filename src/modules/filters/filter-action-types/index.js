@@ -1,0 +1,9 @@
+export const SCOPE_SELECT = "SCOPE_SELECT";
+export const REGION_SELECT = "REGION_SELECT";
+export const COUNTRY_SELECT = "COUNTRY_SELECT";
+export const BU_SELECT = "BU_SELECT";
+export const TEAM_SELECT = "TEAM_SELECT";
+export const REMOVE_FILTERS = "REMOVE_FILTERS";
+export const BU_FILTERS = "BU_FILTERS"
+export const TEAM_FILTERS = "TEAM_FILTERS"
+export const CALENDAR_FILTERS = "CALENDAR_FILTERS"

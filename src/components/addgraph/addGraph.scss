@@ -1,0 +1,34 @@
+$breakpoint-laptop: 768px;
+$breakpoint-desktop: 1030px;
+$breakpoint-largeDevices: 1280px;
+
+@media (min-width: $breakpoint-desktop) and (max-width: $breakpoint-largeDevices) {
+    .addGraph-images {
+        width: 45px;
+        height: 21.63px;
+    }
+
+    .addGraph-labels {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+
+    .addGraph-input {
+        .MuiOutlinedInput-input {
+            font-size: 11.5px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-largeDevices) {
+    .addGraph-labels {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .addGraph-input {
+        .MuiOutlinedInput-input {
+            font-size: 11.5px;
+        }
+    }
+}

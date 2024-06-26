@@ -1,0 +1,138 @@
+$breakpoint-small: 768px;
+$breakpoint-laptop: 1030px;
+$breakpoint-largeDevices: 1280px;
+
+.list-item-container {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.header-right>button,
+.header-right>span {
+    margin: 0px 12px;
+    padding: 0px;
+}
+
+.header-right>span.userName {
+    margin: 0px;
+}
+
+@media (min-width: $breakpoint-laptop) and (max-width: $breakpoint-largeDevices) {
+    .search-input {
+        width: 400px;
+    }
+
+    .logo-text-open,
+    .logo-text-close {
+        font-size: 19px !important;
+    }
+
+    .logoImage {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-right {
+        margin-right: 5px;
+    }
+
+    .list-items .MuiTypography-root {
+        font-size: 12px !important;
+    }
+
+    .list-item-container {
+        .MuiListItemText-root {
+            padding: 0px !important;
+        }
+    }
+
+    .executivesummary.list-item-container,
+    .detailedsummary.list-item-container,
+    .computations.list-item-container {
+        padding: 0px !important;
+
+        .MuiListItemText-root {
+            padding: 8px !important;
+
+            .MuiTypography-root {
+                font-size: 11.5px !important;
+            }
+        }
+    }
+
+    .vehiclemaster.list-item-container,
+    .scope-transactional.list-item-container {
+       // padding: 0px 0px 0px 10px !important;
+
+        .MuiListItemText-root {
+            padding: 8px !important;
+
+            .MuiTypography-root {
+                font-size: 11.5px !important;
+            }
+        }
+    }
+
+    .locationmaster.list-item-container,
+    .scope-transactional.list-item-container {
+      //  padding: 0px 0px 0px 10px !important;
+
+        .MuiListItemText-root {
+            padding: 8px !important;
+
+            .MuiTypography-root {
+                font-size: 11.5px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-largeDevices) {
+    .search-input {
+        width: 500px;
+    }
+
+    .logo-text-open,
+    .logo-text-close {
+        font-size: 22.5px !important;
+    }
+
+    .logoImage {
+        width: 26px;
+        height: 26px;
+    }
+
+    .header-right {
+        margin-right: 15px;
+    }
+
+    .list-items .MuiTypography-root {
+        font-size: 13px !important;
+    }
+
+    .list-items {
+        padding: 0px 5px !important;
+    }
+
+    .executivesummary.list-item-container,
+    .vehiclemaster.list-item-container,
+    .locationmaster.list-item-container,
+    .scope-transactional.list-item-container,
+    .detailedsummary.list-item-container,
+    .equivalence.list-item-container,
+    .computations.list-item-container {
+        .MuiListItemText-root {
+            padding: 8px 15px !important;
+
+            .MuiTypography-root {
+                font-size: 12px !important;
+            }
+        }
+    }
+}
+
+.headerMainmenuClass {
+    // color: #5A5A5A !important;
+    color: #d9d9d9 !important;
+
+}

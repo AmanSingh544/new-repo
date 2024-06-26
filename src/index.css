@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+thead .MuiTableCell-root span{
+  color: #555f63 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D0D2D6;
+}
+
+.singleViewGraph {
+  height: 64vh !important;
+}
+
+.singleViewGraph>.leaflet-container-app {
+  overflow-y: hidden;
+}
+
+.scrollbar-horizontal {
+  overflow-y: scroll !important;
+}
+
+.scrollbar-horizontal::-webkit-scrollbar {
+  height: 3px;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb,
+.scrollbar-horizontal::-webkit-scrollbar-thumb {
+  background-color: #D0D2D6;
+}
+
+.userProfile {
+  border-radius: 50px;
+}
+
+.userName {
+  font-size: 14px;
+  color: #1C1C1C;
+  font-weight: 700;
+}
+
+.root-toolbar {
+  padding: 0px !important;
+}
+
+.dropzoneClass1 {
+  border: 2px dashed #DBDBDB !important;
+  border-radius: 15px !important;
+}
+
+.drawer-open>.MuiPaper-root {
+  display: flex;
+  align-items: flex-start;
+  background-color: black;
+}
+
+.active>.MuiListItemText-root {
+  background-color: #0094BA;
+  
+  border-radius: 5px;
+}
+
+.active>.MuiListItemText-root .MuiTypography-root {
+  color: #FFFFFF;
+}
+
+.MuiCollapse-wrapperInner .MuiTypography-root {
+  font-size: 12px !important;
+}
+
+.MuiOutlinedInput-input.Mui-disabled {
+  -webkit-text-fill-color: #4A4A4A !important;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.infoData-font {
+  font-size: 13px !important;
+}
+

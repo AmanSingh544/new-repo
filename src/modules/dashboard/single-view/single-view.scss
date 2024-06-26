@@ -1,0 +1,1230 @@
+$breakpoint-small: 768px;
+$breakpoint-laptop: 1030px;
+$breakpoint-largeLaptops: 1100px;
+$breakpoint-largeDevices: 1500px;
+
+.grid-filters .MuiInputBase-root {
+    background: #FFF !important;
+}
+
+.line-chart-container {
+    justify-content: center !important;
+}
+
+.metric-cards-single {
+    .metric-card-trans {
+        height: 140px;
+    }
+}
+
+.grid-filters .MuiSelect-select {
+    color: #747474 !important;
+}
+
+.metric-card-trans {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.eq-page {
+    margin: 0px 10px;
+}
+
+.emission-activity-value {
+    margin-left: 10px;
+    width: 120px;
+    color: #0A4A7E;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.emission-single-scope {
+    height: 100%;
+    display: flex;
+
+    .emission-activity {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+        justify-content: flex-start;
+    }
+}
+
+.select_box .MuiInputBase-root {
+    width: 269px;
+    background: #FFF;
+    height: 40px;
+    color: #747474;
+}
+
+.select_box_long .MuiInputBase-root {
+    width: 100%;
+    background: #FFF;
+    height: 40px;
+    color: #747474;
+}
+
+.box_next_prev_btn .button-text {
+    font-size: 13px !important;
+    font-weight: 400;
+}
+
+.box_next_prev_btn .MuiButtonBase-root {
+    padding: 0px 16px !important;
+}
+
+.box_next_prev_btn .MuiButtonBase-root svg {
+    height: 15px !important;
+    width: 21px !important;
+}
+
+.select_box .MuiPaper-root {
+    opacity: 1;
+    transform: none;
+    min-width: 299px;
+    max-height: 300px;
+    border-radius: 1rem !important;
+    width: 250px;
+    transition: opacity 289ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 192ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    top: 198px;
+    left: 270px;
+    transform-origin: 149.5px 0px;
+}
+
+.all-single span {
+    color: #5C5C5C !important;
+}
+
+.EmissionByScopes {
+    .donut-container.emissionScopes {
+        width: 26vw;
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+
+        .enabledInfoClick {
+
+            #legend-container {
+
+                ul {
+                    width: 100% !important;
+                    height: 300px !important;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                }
+            }
+        }
+
+        #legend-container {
+            display: flex;
+            align-items: center;
+
+            ul {
+                justify-content: center !important;
+                gap: 15px;
+                width: 100px !important;
+                overflow-y: auto;
+            }
+        }
+    }
+}
+
+.metric-label {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 18px !important;
+    color: #3C3C3C !important;
+    padding: 10px 15px !important;
+}
+.dnoutMainClass.ExtractionProductionTransmissionVsEmission{
+    display: flex;
+    justify-content: center !important;
+    height: 100% !important;
+    margin-right: 8rem;
+
+}
+
+@media (min-width: $breakpoint-laptop) and (max-width: $breakpoint-largeLaptops) {
+
+    .single-dd,
+    .all-single span,
+    .dd-head,
+    .select_box .MuiSelect-select {
+        font-size: 12.5px !important;
+    }
+
+    .line-chart-container {
+        img {
+            width: 6px;
+            position: absolute;
+            top: 22%;
+            left: 1.25%;
+        }
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1280px) {
+    .line-chart-container {
+        img {
+            width: 10px;
+            position: absolute;
+            top: 13%;
+            left: 0.75%;
+        }
+    }
+
+    .EmissionByScopes {
+        .donut-container.emissionScopes {
+            width: 28vw;
+            display: flex;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+
+            #legend-container {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    justify-content: center !important;
+                    gap: 15px;
+                    width: 100px;
+                }
+
+            }
+        }
+    }
+
+    .singleViewGraph.costFuelItem {
+        .multi-donut {
+            .donut-multi-container.cost-fuel {
+                width: 25vw !important;
+            }
+
+            #legend-container-costfuel ul {
+                gap: 10px;
+
+                li {
+                    font-size: 15px !important;
+                }
+
+            }
+        }
+    }
+
+    .singleViewGraph.modesVsEmission {
+        .pieChartContainer {
+            .pieChartMain {
+                width: 32vw !important;
+            }
+
+            #legend-container {
+                ul {
+                    gap: 10px !important;
+
+                    li {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.ghgSingleView {
+        .dnoutMainClass {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .donut-container.ghgEmission {
+                margin: 0px !important;
+                justify-content: center;
+                align-items: center;
+
+                #legend-container-ghg {
+                    ul {
+                        padding-top: 16px !important;
+                        gap: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .singleViewGraph {
+        .bar-chart-container.SalesVsEmission.single {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .SalesVsEmission {
+                width: 100% !important;
+
+                canvas {
+                    height: 380px !important;
+                }
+            }
+
+            #legend-container-bar {
+                height: 10%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1350px) {
+    .line-chart-container {
+        img {
+            width: 10px;
+            position: absolute;
+            top: 20%;
+            left: 0.75%;
+        }
+    }
+
+    .EmissionByScopes {
+        .donut-container.emissionScopes {
+            width: 26vw;
+            display: flex;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+
+            #legend-container {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    justify-content: center !important;
+                    gap: 15px;
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.ghgSingleView {
+        .dnoutMainClass {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .donut-container.ghgEmission {
+                margin: 0px !important;
+                justify-content: center;
+                align-items: center;
+
+                #legend-container-ghg {
+                    ul {
+                        padding-top: 16px !important;
+                        gap: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .singleViewGraph.costFuelItem {
+        .multi-donut {
+            .donut-multi-container.cost-fuel {
+                width: 25vw !important;
+            }
+
+            #legend-container-costfuel ul {
+                gap: 10px;
+
+                li {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.modesVsEmission {
+        .pieChartContainer {
+            .pieChartMain {
+                width: 28vw !important;
+            }
+
+            #legend-container {
+                ul {
+                    gap: 10px !important;
+
+                    li {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .singleViewGraph {
+        .bar-chart-container.SalesVsEmission.single {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .SalesVsEmission {
+                width: 100% !important;
+
+                canvas {
+                    height: 380px !important;
+                }
+            }
+
+            #legend-container-bar {
+                height: 10%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1500px) {
+    .line-chart-container {
+        img {
+            width: 10px;
+            position: absolute;
+            top: 28%;
+            left: 0.75%;
+        }
+    }
+
+    .EmissionByScopes {
+        .donut-container.emissionScopes {
+            width: 25vw;
+            display: flex;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+
+            #legend-container {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    justify-content: center !important;
+                    gap: 15px;
+
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.costFuelItem {
+        .multi-donut {
+            .donut-multi-container.cost-fuel {
+                width: 25vw !important;
+            }
+
+            #legend-container-costfuel ul {
+                gap: 10px;
+
+                li {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.modesVsEmission {
+        .pieChartContainer {
+            .pieChartMain {
+                width: 29vw !important;
+            }
+
+            #legend-container {
+                ul {
+                    gap: 10px !important;
+
+                    li {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.ghgSingleView {
+        .dnoutMainClass {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .donut-container.ghgEmission {
+                margin: 0px !important;
+                justify-content: center;
+                align-items: center;
+
+                #legend-container-ghg {
+                    ul {
+                        padding-top: 16px !important;
+                        gap: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .singleViewGraph {
+        .bar-chart-container.SalesVsEmission.single {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .SalesVsEmission {
+                width: 100% !important;
+
+                canvas {
+                    height: 390px !important;
+                }
+            }
+
+            #legend-container-bar {
+                height: 10%;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-largeLaptops) and (max-width: $breakpoint-largeDevices) {
+
+    .single-dd,
+    .all-single span,
+    .dd-head,
+    .select_box .MuiSelect-select {
+        font-size: 13px !important;
+    }
+
+    .icon_img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .metric-icon-img {
+        text-align: end;
+        padding: 1rem 1rem 0rem 0rem;
+    }
+
+    .metric-cards-single.executive {
+        .metric-icon-img {
+            padding: 0.5rem 0.5rem 0rem 0rem !important;
+        }
+    }
+
+    .all-metric-value {
+        padding-top: 1rem;
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        color: #1C1C1C;
+    }
+
+    .metric-card-trans {
+        background-color: #FFFFFF;
+        border-radius: 7px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media (min-width: 1500px) and (max-width:1700px) {
+    .EmissionByScopes {
+        .donut-container.emissionScopes {
+            width: 23vw;
+            display: flex;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+
+            #legend-container {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    justify-content: center !important;
+                    gap: 15px;
+
+                }
+            }
+        }
+    }
+
+    .single-dd,
+    .all-single span,
+    .dd-head,
+    .select_box .MuiSelect-select {
+        font-size: 14px !important;
+    }
+
+    .line-chart-container {
+        img {
+            width: 12px;
+            position: absolute;
+            top: 22%;
+            left: 0.5%;
+        }
+    }
+
+    .icon_img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .metric-label {
+        font-size: 17px !important;
+        font-weight: 500 !important;
+        line-height: 18px;
+        color: #3C3C3C;
+        padding-left: 1rem;
+    }
+
+    .metric-icon-img {
+        text-align: end;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+    }
+
+
+    .metric-cards-single.executive {
+        .metric-icon-img {
+            padding: 0.25rem 0.25rem 0rem 0rem !important;
+        }
+    }
+
+    .all-metric-value {
+        padding-top: 1.5rem;
+        font-weight: 600 !important;
+        font-size: 23px !important;
+        color: #1C1C1C;
+        padding-left: 1rem;
+    }
+
+    .metric-card-trans {
+        background-color: #FFFFFF;
+        padding: 10px 5px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .singleViewGraph.costFuelItem {
+        .multi-donut {
+            .donut-multi-container.cost-fuel {
+                width: 25vw !important;
+            }
+
+            #legend-container-costfuel ul {
+                gap: 10px;
+
+                li {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.modesVsEmission {
+        .pieChartContainer {
+            .pieChartMain {
+                width: 25vw !important;
+            }
+
+            #legend-container {
+                ul {
+                    gap: 10px !important;
+
+                    li {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.ghgSingleView {
+        .dnoutMainClass {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .donut-container.ghgEmission {
+                margin: 0px !important;
+                justify-content: center;
+                align-items: center;
+
+                #legend-container-ghg {
+                    ul {
+                        padding-top: 16px !important;
+                        gap: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .singleViewGraph.processVsEmissions {
+        .bar-chart-container.processVsEmission.single {
+            .processVsEmission {
+                img {
+                    top: 50% !important;
+                }
+            }
+        }
+    }
+
+    .singleViewGraph {
+        .bar-chart-container.SalesVsEmission.single {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .SalesVsEmission {
+                width: 100% !important;
+
+                img {
+                    width: 12px;
+                    position: absolute;
+                    top: 25%;
+                    left: 0.5%;
+                }
+
+                canvas {
+                    height: 410px !important;
+                }
+            }
+
+            #legend-container-bar {
+                height: 10%;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1700px) {
+    .metric-cards-single.executive {
+        .metric-icon-img {
+            padding: 0.5rem 0.5rem 0rem 0rem !important;
+            text-align: end;
+        }
+    }
+
+    .metric-card-trans {
+        background-color: #FFFFFF;
+        padding: 10px 5px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .line-chart-container {
+        img {
+            width: 12px;
+            position: absolute;
+            top: 35%;
+            left: 0.5%;
+        }
+    }
+
+
+    .EmissionByScopes {
+        .donut-container.emissionScopes {
+            width: 19vw;
+            display: flex;
+            flex-direction: row !important;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+
+
+            #legend-container {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    justify-content: center !important;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.costFuelItem {
+        .multi-donut {
+            .donut-multi-container.cost-fuel {
+                width: 23vw !important;
+            }
+
+            #legend-container-costfuel ul {
+                gap: 10px;
+
+                li {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+    }
+
+    .singleViewGraph.modesVsEmission {
+        .pieChartContainer {
+            .pieChartMain {
+                width: 20vw !important;
+            }
+
+            #legend-container {
+                ul {
+                    gap: 10px !important;
+
+                    li {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .singleViewGraph.ghgSingleView {
+        .dnoutMainClass {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            .donut-container.ghgEmission {
+                margin: 0px !important;
+                justify-content: center;
+                align-items: center;
+
+                #legend-container-ghg {
+                    ul {
+                        padding-top: 16px !important;
+                        gap: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .singleViewGraph.processVsEmissions {
+        .bar-chart-container.processVsEmission.single {
+            .processVsEmission {
+                img {
+                    top: 50% !important;
+                }
+            }
+        }
+    }
+
+    .singleViewGraph {
+        .bar-chart-container.SalesVsEmission.single {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .SalesVsEmission {
+                width: 100% !important;
+
+                img {
+                    width: 12px;
+                    position: absolute;
+                    top: 25%;
+                    left: 0.5%;
+                }
+
+                canvas {
+                    height: 410px !important;
+                }
+            }
+
+            #legend-container-bar {
+                height: 10%;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width:1350px) {
+
+    .buYearInfo,
+    .buMonthInfo {
+        width: 74px !important;
+
+
+        .MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input {
+
+            padding: 9px 6px 9px 4px;
+        }
+
+        .buYearInfoMenu,
+        .buMonthInfo,
+        .buMonthInfoMenu {
+            font-size: 13px;
+        }
+
+        label {
+            font-size: 12px !important;
+            padding-top: 2px !important;
+        }
+
+    }
+
+    .buWeekInfo {
+        width: 62px !important;
+
+        .MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input {
+            font-size: 13px !important;
+            padding: 9px 6px !important;
+        }
+
+        label {
+            font-size: 12px !important;
+            padding-top: 2px !important;
+        }
+
+        .MuiSelect-root.MuiSelect-select.MuiSelect-selectMenu.MuiSelect-outlined {
+            font-size: 13px !important;
+            padding: 11px;
+
+        }
+    }
+}
+
+.bar-chart-container.supplierVsEmission.single {
+    width: 96%;
+    display: flex;
+    justify-content: center;
+
+    .supplierVsEmission {
+        height: 97% !important;
+    }
+
+    #legend-container-bar {
+        display: none;
+    }
+}
+
+.singleViewGraph.EmissionByScopes {
+    .dnoutMainClass {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .donut-container.emissionScopes {
+            margin: 0px !important;
+
+            #legend-container {
+                ul {
+                    li {
+                        font-size: 17px !important;
+                        width: 380px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.singleViewGraph.ghgSingleView {
+    .dnoutMainClass {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .donut-container.ghgEmission {
+            margin: 0px !important;
+            justify-content: center;
+            align-items: center;
+
+            #legend-container-ghg {
+                ul {
+                    padding-top: 10px !important;
+                    gap: 3px;
+
+                    li {
+                        font-size: 15px !important;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.singleViewGraph.processVsEmissions {
+    .bar-chart-container.processVsEmission.single {
+        width: 98%;
+        display: flex;
+        justify-content: center;
+
+        .processVsEmission {
+            height: 100% !important;
+        }
+    }
+}
+
+.singleViewGraph.totalScope-1emissionvsCategories {
+    .bar-chart-container.region-total-scope-1 {
+        margin-left: 3px !important;
+        overflow-x: hidden;
+        overflow-y: hidden !important;
+
+        .bar-chart-container-emission.regionTotalScope1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.singleViewGraph {
+    .bar-chart-container.region-total-scope-2 {
+        overflow-x: hidden;
+        overflow-y: hidden !important;
+
+        .bar-chart-container-emission.regionTotalScope2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .bar-chart-container.buPerformance.single {
+        margin: 5px !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .buPerformance {
+            height: 96% !important;
+            width: 100% !important;
+        }
+    }
+
+    .bar-chart-container.EmissionPerformance.single {
+        margin: 5px !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .EmissionPerformance {
+            height: 96% !important;
+            width: 100% !important;
+        }
+    }
+
+    .bar-chart-container.totalScope3 {
+        .bar-chart-container-emission.totalScope3 {
+            width: 97%;
+            height: 100%;
+        }
+    }
+
+    .bar-chart-container.supplier.single {
+        .supplier {
+            height: 100%;
+        }
+    }
+
+    .bar-chart-container.buPerformance.single.UpStreamLessorVsEmission {
+        justify-content: flex-end !important;
+
+        .buPerformance.UpStreamLessorVsEmission {
+            height: 90% !important;
+        }
+    }
+
+    .bar-chart-container.buPerformance.single.UpStreamAssetTypeVsEmission,
+    .bar-chart-container.buPerformance.single.rmpo,
+    .bar-chart-container.buPerformance.single.NonSCM {
+        justify-content: flex-end !important;
+        overflow: hidden;
+
+        .buPerformance.UpStreamAssetTypeVsEmission,
+        .buPerformance.rmpo,
+        .buPerformance.NonSCM {
+            height: 90% !important;
+        }
+    }
+
+    .bar-chart-container.WasteProcessingCompaniesVsEmission.single,
+    .bar-chart-container.SoldProductVsEmissions.single {
+        margin: 0px 0px 20px 5px !important;
+        justify-content: flex-end;
+        overflow: hidden;
+
+        .WasteProcessingCompaniesVsEmission,
+        .SoldProductVsEmissions {
+            overflow: hidden;
+            height: 90% !important;
+        }
+
+        #legend-container-bar-WasteProcessingCompaniesVsEmission,#legend-container-bar-SoldProductVsEmissions {
+            display: none;
+          }
+    }
+.bar-chart-container.PurchasedElectricityConsumptionVsEmission.single{
+    margin: 0px 5px !important ;
+    .PurchasedElectricityConsumptionVsEmission{
+        height: 90% !important ;
+    }
+    .legend.PurchasedElectricityConsumptionVsEmission{
+        height: 10% !important;
+    }
+}
+    .bar-chart-container.lanes.scrollbar-horizontal.single.upstreamNetworksVsEmission {
+        margin: 0px 5px !important;
+    }
+}
+
+.singleViewGraph.costFuelItem {
+    .multi-donut {
+
+        #legend-container-costfuel {
+            ul {
+                li {
+                    p {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 200px !important;
+                        gap: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.all-metric-value {
+    padding-top: 1.5rem;
+    font-weight: 600 !important;
+    font-size: 23px !important;
+    color: #1C1C1C;
+    padding-left: 1rem;
+}
+
+.NSCMDROPDownFormControl {
+    min-width: 100px;
+
+    .NSCMDROPDown {
+        height: 35px;
+        font-size: 13px !important;
+        color: #333333;
+        font-weight: 400;
+        padding-left: 5px !important;
+
+    }
+}
+
+.bar-chart-container.franchise-Wise-Emission.scrollbar-horizontal {
+    margin: 0px 10px !important;
+
+    .franchiseWiseEmission {
+        height: 100% !important;
+
+    }
+}
+
+.bar-chart-container.upstream-Waste-Management-Vs-Emission.scrollbar-horizontal,
+.bar-chart-container.downstream-Waste-Management-Vs-Emission.scrollbar-horizontal,
+.bar-chart-container.dedicated-Vehicle-Type-Vs-Emissions.scrollbar-horizontal,
+.bar-chart-container.outsourced-Vehicle-Type-Vs-Emissions.scrollbar-horizontal,
+.bar-chart-container.outsourced-Vehicle-Type-Vs-Emissions.scrollbar-horizontal
+{
+    margin: 0px 10px !important;
+
+    .franchiseWiseEmission,
+    .UpstreamWasteManagementVsEmission,
+    .DownstreamWasteManagementVsEmission,
+    .DedicatedVehicleTypeVsEmissions,
+    .OutsourcedVehicleTypeVsEmissions,
+    .InvestmentCompanybasedEmission
+    {
+
+        height: 100% !important;
+
+        .horizotalArrow {
+            display: none;
+        }
+    }
+}
+
+.line-chart-container.detailRefrigeration,
+.line-chart-container.dualYLine {
+    height: 100% !important;
+
+    .detailRefrigeration,
+    .dualYLine {
+        height: 100% !important;
+    }
+
+    #legend-container-line {
+        display: none;
+    }
+
+}
+
+.line-chart-container.detailRefrigerationFuel,
+.line-chart-container.dualYLine {
+    height: 100% !important;
+
+    .detailRefrigerationFuel,
+    .dualYLine {
+        height: 100% !important;
+    }
+
+    #legend-container-line {
+        display: none;
+    }
+
+}
+
+.bar-chart-container.SpendVsEmission.single {
+    margin: 0px 5px !important;
+    justify-content: flex-end !important;
+
+    .SpendVsEmission {
+        height: 80% !important;
+    }
+
+    .legend.SpendVsEmission {
+        height: 10% !important;
+    }
+}
+.bar-chart-container.FuelTypeConsumptionsVsEmissions.single, .bar-chart-container.ProductTypeVsEmission.single{
+    margin: 0px 5px !important;
+    justify-content: flex-end !important;
+
+    .FuelTypeConsumptionsVsEmissions,.ProductTypeVsEmission {
+        height: 80% !important;
+    }
+
+    .legend.FuelTypeConsumptionsVsEmissions,.legend.ProductTypeVsEmission {
+        display: none;
+    }
+}
+
+
+img.righArrow {
+    width: 10px;
+    left: 98%;
+}

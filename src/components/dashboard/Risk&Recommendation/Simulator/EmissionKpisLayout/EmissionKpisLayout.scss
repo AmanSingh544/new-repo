@@ -1,0 +1,135 @@
+.circularProgressWithChildrenSemi {
+    margin-top: 45px !important;
+
+    .CircularProgressbar {
+        transform: rotate(270deg);
+    }
+}
+
+.circularProgressWithChildrenfull {
+    transform: rotate(-172deg) !important;
+}
+
+.EmissionKpiBlueDark .removeBlueDark {
+    display: none !important;
+}
+
+.EmissionKpiGreen.hideGreen {
+    display: none !important;
+}
+
+.EmissionKpiBlue .removeBlue {
+    margin-bottom: 15px !important;
+    font-size: 1vw !important;
+    transition: font-size 0.5s ease-in-out !important;
+}
+
+.increaseMargins {
+    margin-top: 45px !important;
+}
+
+.turnGrey {
+    color: #b1000e !important;
+}
+
+.emissionKpiMainCont {
+    margin: 14px 31px !important;
+    display: flex;
+    flex-direction: column !important;
+}
+
+.emissionKpiText {
+    font-weight: 400;
+    font-size: 16px !important;
+    margin-left: 10px;
+    letter-spacing: -0.02em;
+    color: #172B54;
+}
+
+.baseLineDivSpan {
+    width: 13px;
+    height: 15px;
+    background: #555f63;
+    border-radius: 1px;
+    margin-right: 10px;
+  
+}
+
+.baseLineDivSpanGren {
+    width: 13px;
+    height: 15px;
+    background: #b1000e;
+    border-radius: 1px;
+    margin-right: 10px;
+}
+
+.baseLineDivtext {
+    font-weight: 400;
+    font-size: 13px !important;
+    letter-spacing: -0.02em;
+    color: #1c1c1c;
+}
+
+.circularProgressBarMainDiv {
+    width: 60% !important;
+    margin-right: 10px !important;
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+    .semiCircleVlue.EmissionperUnit {
+        font-size: 0.9vw !important;
+    }
+
+    .EmissionKpiHead {
+        font-size: 10.6px !important;
+        // padding: 12px 0px 0px 10px !important;
+    }
+
+    .EmissionKpiRed {
+        font-size: 10.6px !important;
+    }
+
+    .EmissionKpiRed.IncreseRed {
+        margin-top: 10px !important;
+        font-size: 13px !important;
+        // transition: font-size 1s ease-in-out !important;
+    }
+
+    .EmissionKpiGreen {
+        font-size: 13px !important;
+        // padding-top: 0px !important;
+    }
+
+    .actualEmmisionDiv {
+        height: 320px !important;
+    }
+
+    .emssionSideKpi {
+        height: 83px !important;
+    }
+
+    .circularProgressWithChildrenSemi {
+        margin-top: 24px !important;
+    }
+
+    .increaseMargin {
+        margin-top: 50px !important;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1500px) {
+    .semiCircleVlue.EmissionperUnit {
+        font-size: 0.8vw !important;
+    }
+}
+@media (min-width: 1500px) and (max-width: 1750px) {
+    .semiCircleVlue.EmissionperUnit {
+        font-size: 0.7vw !important;
+    }
+}
+@media (min-width: 1750px) {
+    .semiCircleVlue.EmissionperUnit {
+        font-size: 0.6vw !important;
+    }
+}
