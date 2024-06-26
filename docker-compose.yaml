@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ServiceName:
+    image: IMAGENAME
+    container_name: ServiceName
+    restart: always
+    ports:
+      - 8091:80
