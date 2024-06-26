@@ -1,0 +1,7 @@
+version: '3'
+services:
+  carbonx_fe:
+    build: .
+    container_name: carbonx_fe
+    ports:
+      - 3000:80
